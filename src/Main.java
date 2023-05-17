@@ -107,8 +107,8 @@ class Task {
 
 
 class TaskController {
-    private static final String DB_URL = "jdbc:mysql://my_db:3306/my_db";
-    private static final String DB_USERNAME = "student";
+    private static final String DB_URL = "jdbc:mysql://10.0.10.3:3306/my_db";
+    private static final String DB_USERNAME = "PTlusty";
     private static final String DB_PASSWORD = "pass123";
 
     public void createTask(String name, double income) {
