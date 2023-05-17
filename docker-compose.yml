@@ -11,7 +11,7 @@ services:
                 ipv4_address: 10.0.10.3
         ports:
             - 3306:3306
-        command: ["./wait-for-it.sh", "mysql:3306", "--", "mysqld"]
+        # command: ["./wait-for-it.sh", "mysql:3306", "--", "mysqld"]
 
     Java_App:
         build: .
@@ -22,7 +22,7 @@ services:
             - Cloud_95596
         stdin_open: true
         tty: true
-        command: ["./wait-for-it.sh", "Cloud_95596:3306", "--", "java", "-cp", "mysql-connector-j-8.0.33.jar:.", "Main"]
+        # command: ["./wait-for-it.sh", "Cloud_95596:3306", "--", "java", "-cp", "mysql-connector-j-8.0.33.jar:.", "Main"]
 
 networks:
         Bridge-Zadanie-1:
