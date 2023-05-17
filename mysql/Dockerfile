@@ -14,7 +14,7 @@ RUN echo "[mysqld]\ncharacter-set-server=utf8mb4" >> /etc/mysql/my.cnf
 
 EXPOSE 3306
 
-COPY ../wait-for-it.sh /
+COPY ./wait-for-it.sh /
 COPY init.sql /docker-entrypoint-initdb.d/
 COPY create_table.sql /docker-entrypoint-initdb.d/
 
