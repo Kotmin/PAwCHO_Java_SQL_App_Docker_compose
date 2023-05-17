@@ -7,7 +7,8 @@ services:
             MYSQL_USER: PTlusty
             MYSQL_PASSWORD: pass123
         networks:
-            - Bridge-Zadanie-1
+            Bridge-Zadanie-1:
+                ipv4_address: 10.0.10.3
         ports:
             - 3306:3306
 
