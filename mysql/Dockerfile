@@ -15,8 +15,8 @@ RUN echo "[mysqld]\ncharacter-set-server=utf8mb4" >> /etc/mysql/my.cnf
 EXPOSE 3306
 
 
-COPY mysql/init.sql /docker-entrypoint-initdb.d/
-COPY mysql/create_table.sql /docker-entrypoint-initdb.d/
+COPY init.sql /docker-entrypoint-initdb.d/
+COPY create_table.sql /docker-entrypoint-initdb.d/
 
 # Start the MySQL server when the container starts
 CMD ["mysqld"]
