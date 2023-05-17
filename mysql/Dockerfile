@@ -3,8 +3,7 @@ FROM mysql:5.7
 
 ENV MYSQL_ROOT_PASSWORD="root"
 ENV MYSQL_DATABASE="my_db"
-ENV MYSQL_USER="student"
-ENV MYSQL_PASSWORD="pass123"
+
 
 # Copy a custom MySQL configuration file into the container
 # COPY my.cnf /etc/mysql/my.cnf
